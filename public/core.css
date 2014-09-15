@@ -1,0 +1,17 @@
+.results {
+	text-align: center;
+}
+
+.jumbotron {
+	margin-top: 40px;
+	width: 80%;
+	display: inline-block;
+}
+
+.jumbotron h3 {
+	padding-bottom: 40px;
+}
+
+.container {
+	text-align: center;
+}
