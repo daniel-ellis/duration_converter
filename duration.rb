@@ -3,6 +3,10 @@ require_relative 'lib/dur'
 
 include Dur
 
+get '/ping' do
+  [200, 'Hello']
+end
+
 get '/' do
   erb :index
 end
