@@ -1,1 +1,1 @@
-web: bundle exec ruby duration.rb -p $PORT
+web: bundle exec thin -p $PORT
