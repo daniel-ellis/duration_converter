@@ -3,8 +3,9 @@ require 'ruby-duration'
 module Dur
 
   def word_time_to_seconds(dur)
-    match = dur.scan(/(\d+)\W(\w+)/)
-    return dur unless match.length > 0
+    
+    return dur if /^\d+$/.match dur
+    match = dur.scan(/(\d+)\s?(\w+)/)
     seconds = 0
     match.each do |m|
       seconds += hour_min_sec_to_seconds(m[0], m[1])
